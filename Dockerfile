@@ -61,3 +61,5 @@ LABEL org.opencontainers.image.licenses=MIT \
       org.opencontainers.image.version=${VERSION}
 
 ENTRYPOINT ["/bin/oauth2-proxy"]
+FROM oauth2-proxy/oauth2-proxy:latest
+CMD ["--config", "/etc/oauth2-proxy.cfg"]
